@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>index</title>
+ </head>
+ <body>
+ <style>
+  .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+    justify-content: space-around;
+  -webkit-flex-flow: row ;
+}
+ .flex-column {
+    align-self: center
+}
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 400px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px
+}
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.header {
+  background: lightblue;
+  border-radius: 10px
+}
+.footer {
+  background: lightblue;
+  border-radius: 10px
+}
+ </style>
+
+  <div class="wrapper">
+  <header class="header">Header</header>
+
+<ul class="flex-container">
+
+<ul class="flex-column">
+  <li class="flex-item flex-item1">Баю-баюшки-баю, <br> Не ложися на краю.  <br> Придет серенький волчок  </li>
+  <li class="flex-item flex-item2">И ухватит за бочок.  <br> Он ухватит за бочок  <br> И потащит во лесок,  <br> И потащит во лесок,  <br></li>
+  <li class="flex-item flex-item3">Под ракитовый кусток.  <br> Где волки воют,  <br> Детям спать не дают. </li>
+</ul>
+
+<ul class="flex-column">
+  <li class="flex-item flex-item4">А-а-а-а, а баю-баю-баю, а-а-а-а. <br> Баю-баю-баинки,</li>
+  <li class="flex-item flex-item5">Я скатаю валенки <br> Сыночку на ноженьки <br> Бегать по дороженьке.</li>
+  <li class="flex-item flex-item6">Баю-баю-баю-бай, <br> Баю-баю-баю-бай, <br> А-а-а, баю-баю-баю-баю.</li>
+  <li class="flex-item flex-item7">Баю-баю-баюшки. <br> Не ложися на краю.</li>
+</ul>
+
+</ul>
+
+ </body>
+   <footer class="footer">Footer</footer>
+  </div>
+</html>
